@@ -1,5 +1,7 @@
 # Photo replacement guide
 
+**favicon.svg** — browser tab icon, linked in the `<head>` of `index.html`. Its olive background, cream “o,” and terracotta dot match the restaurant branding. Replace this SVG to change the website avatar.
+
 These are sample photographs downloaded from Unsplash. Replace the files while keeping the filenames; no HTML changes are required. Images are also labeled with comments in index.html.
 
 1. **hero-table.jpg** — large arched image at the top; use your best food photo. A portrait or near-square crop works best (at least 1200px wide).
