@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#343e30" />
+    <meta
+      name="description"
+      content="Find Oliva’s contact details, restaurant address, and opening hours."
+    />
+    <title>Contact & Opening Hours — Oliva</title>
+    <!-- Browser tab icon: replace src/images/favicon.svg to change the website avatar. -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="src/images/favicon.svg" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      SEASONAL INGREDIENTS. LONG LUNCHES. GOOD COMPANY.
+      <span>THAT’S OLIVA.</span>
+    </div>
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="Oliva home">oliva<span>●</span></a>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html" aria-current="page">Contact &amp; hours</a>
+        <a href="contact.html" class="button button-small">Come on over</a>
+      </nav>
+    </header>
+    <main>
+      <section id="visit" class="visit section-padding">
+        <div>
+          <p class="eyebrow">THERE’S A SEAT FOR YOU</p>
+          <h1 class="page-title">Come hungry.<br /><em>Leave happy.</em></h1>
+          <p>
+            Drop by for a long lunch or make an evening of it.<br />We’ll take
+            care of the good part.
+          </p>
+          <!-- CONTACT DETAILS: replace the placeholder telephone and email below. -->
+          <p class="contact-details">
+            <strong>Telephone:</strong> [Phone number]<br />
+            <strong>Email:</strong> hello@example.com
+          </p>
+        </div>
+        <div class="visit-details">
+          <span class="visit-sun" aria-hidden="true">✳</span>
+          <div>
+            <h3>FIND OUR LITTLE CORNER</h3>
+            <p>24 Olive Lane, Old Town<br />Sample address</p>
+          </div>
+          <div>
+            <h3>TAKE YOUR TIME</h3>
+            <dl>
+              <div>
+                <dt>Tuesday – Thursday</dt>
+                <dd>12:00 – 22:00</dd>
+              </div>
+              <div>
+                <dt>Friday – Saturday</dt>
+                <dd>12:00 – 23:00</dd>
+              </div>
+              <div>
+                <dt>Sunday</dt>
+                <dd>12:00 – 20:00</dd>
+              </div>
+              <div>
+                <dt>Monday</dt>
+                <dd>A little rest</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="index.html">oliva<span>●</span></a>
+      <p>A little Mediterranean. A lot of heart.</p>
+      <span>© <span id="year">2026</span> Oliva · Restaurant concept</span
+      ><a href="#">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

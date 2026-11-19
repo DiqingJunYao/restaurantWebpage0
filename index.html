@@ -20,7 +20,7 @@
       <span>THAT’S OLIVA.</span>
     </div>
     <header class="header">
-      <a class="logo" href="#" aria-label="Oliva home">oliva<span>●</span></a>
+      <a class="logo" href="index.html" aria-label="Oliva home">oliva<span>●</span></a>
       <button
         class="nav-toggle"
         aria-expanded="false"
@@ -30,10 +30,10 @@
         <span></span><span></span>
       </button>
       <nav id="navigation" aria-label="Main navigation">
-        <a href="#story">Our story</a>
-        <a href="#menu">The menu</a>
-        <a href="#visit">Find us</a>
-        <a href="#visit" class="button button-small">Come on over <span aria-hidden="true">↗</span></a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact &amp; hours</a>
+        <a href="contact.html" class="button button-small">Come on over</a>
       </nav>
     </header>
     <main>
@@ -50,7 +50,7 @@
             Sun-ripened flavors, something lovely in your glass, and nowhere
             else you need to be.
           </p>
-          <a href="#menu" class="button"
+          <a href="menu.html" class="button"
             >Explore the menu <span aria-hidden="true">↗</span></a
           >
           <div class="hero-note">
@@ -111,86 +111,10 @@
             Our kitchen takes its cues from the Mediterranean: bright, honest
             flavors, dishes made to share, and a menu that follows the seasons.
           </p>
-          <a class="text-link" href="#visit"
+          <a class="text-link" href="contact.html"
             >Make yourself at home <span aria-hidden="true">↗</span></a
           >
         </div>
-      </section>
-      <section id="menu" class="menu section-padding">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
-            <h2>Something for <em>the table.</em></h2>
-          </div>
-          <p>
-            A few favorites, a few seasonal surprises.<br />Always better
-            shared.
-          </p>
-        </div>
-        <div class="menu-tabs" role="group" aria-label="Filter the sample menu">
-          <button class="active" data-filter="all" aria-pressed="true">
-            All the good stuff</button
-          ><button data-filter="small" aria-pressed="false">To begin</button
-          ><button data-filter="main" aria-pressed="false">
-            Something more</button
-          ><button data-filter="sweet" aria-pressed="false">
-            A sweet finish
-          </button>
-        </div>
-        <div class="menu-grid" aria-live="polite">
-          <article class="dish" data-category="small">
-            <div class="dish-top">
-              <h3>Whipped feta</h3>
-              <span>9</span>
-            </div>
-            <p>Roasted grapes, thyme honey, warm sourdough</p>
-            <span class="dish-tag">A TABLE FAVORITE · VEGETARIAN</span>
-          </article>
-          <article class="dish" data-category="small">
-            <div class="dish-top">
-              <h3>Heirloom tomatoes</h3>
-              <span>12</span>
-            </div>
-            <p>Burrata, basil, extra virgin olive oil</p>
-            <span class="dish-tag">SEASONAL · VEGETARIAN</span>
-          </article>
-          <article class="dish" data-category="main">
-            <div class="dish-top">
-              <h3>Lemon & herb chicken</h3>
-              <span>24</span>
-            </div>
-            <p>Crispy potatoes, charred lemon, pan jus</p>
-            <span class="dish-tag">FROM THE GRILL</span>
-          </article>
-          <article class="dish" data-category="main">
-            <div class="dish-top">
-              <h3>Summer garden pasta</h3>
-              <span>19</span>
-            </div>
-            <p>Roasted zucchini, cherry tomatoes, pecorino</p>
-            <span class="dish-tag">VEGETARIAN</span>
-          </article>
-          <article class="dish" data-category="main">
-            <div class="dish-top">
-              <h3>Catch of the day</h3>
-              <span>28</span>
-            </div>
-            <p>White beans, seasonal greens, salsa verde</p>
-            <span class="dish-tag">ASK US WHAT’S FRESH</span>
-          </article>
-          <article class="dish" data-category="sweet">
-            <div class="dish-top">
-              <h3>Olive oil cake</h3>
-              <span>8</span>
-            </div>
-            <p>Citrus cream, seasonal berries, pistachio</p>
-            <span class="dish-tag">SAVE A LITTLE ROOM</span>
-          </article>
-        </div>
-        <p class="menu-note">
-          Illustrative menu · Prices shown in € · Please ask about ingredients
-          and allergens.
-        </p>
       </section>
       <section class="interlude" aria-labelledby="interlude-title">
         <!-- IMAGE 3: Full-width food moment. Replace src/images/shared-table.jpg with your signature dish or a shared table photograph. -->
@@ -208,52 +132,9 @@
           </h2>
         </div>
       </section>
-      <section id="visit" class="visit section-padding">
-        <div>
-          <p class="eyebrow">THERE’S A SEAT FOR YOU</p>
-          <h2>Come hungry.<br /><em>Leave happy.</em></h2>
-          <p>
-            Drop by for a long lunch or make an evening of it.<br />We’ll take
-            care of the good part.
-          </p>
-          <!-- CONTACT DETAILS: replace the placeholder telephone and email below. -->
-          <p class="contact-details">
-            <strong>Telephone:</strong> [Phone number]<br />
-            <strong>Email:</strong> hello@example.com
-          </p>
-        </div>
-        <div class="visit-details">
-          <span class="visit-sun" aria-hidden="true">✳</span>
-          <div>
-            <h3>FIND OUR LITTLE CORNER</h3>
-            <p>24 Olive Lane, Old Town<br />Sample address</p>
-          </div>
-          <div>
-            <h3>TAKE YOUR TIME</h3>
-            <dl>
-              <div>
-                <dt>Tuesday – Thursday</dt>
-                <dd>12:00 – 22:00</dd>
-              </div>
-              <div>
-                <dt>Friday – Saturday</dt>
-                <dd>12:00 – 23:00</dd>
-              </div>
-              <div>
-                <dt>Sunday</dt>
-                <dd>12:00 – 20:00</dd>
-              </div>
-              <div>
-                <dt>Monday</dt>
-                <dd>A little rest</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
     </main>
     <footer>
-      <a class="logo" href="#">oliva<span>●</span></a>
+      <a class="logo" href="index.html">oliva<span>●</span></a>
       <p>A little Mediterranean. A lot of heart.</p>
       <span>© <span id="year">2026</span> Oliva · Restaurant concept</span
       ><a href="#">Back to top ↑</a>

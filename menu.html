@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#343e30" />
+    <meta
+      name="description"
+      content="Explore Oliva’s sample Mediterranean menu, from sharing plates to seasonal mains and sweet finishes."
+    />
+    <title>Menu — Oliva</title>
+    <!-- Browser tab icon: replace src/images/favicon.svg to change the website avatar. -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="src/images/favicon.svg" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      SEASONAL INGREDIENTS. LONG LUNCHES. GOOD COMPANY.
+      <span>THAT’S OLIVA.</span>
+    </div>
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="Oliva home">oliva<span>●</span></a>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="contact.html">Contact &amp; hours</a>
+        <a href="contact.html" class="button button-small">Come on over</a>
+      </nav>
+    </header>
+    <main>
+      <section id="menu" class="menu section-padding">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
+            <h1 class="page-title">Something for <em>the table.</em></h1>
+          </div>
+          <p>
+            A few favorites, a few seasonal surprises.<br />Always better
+            shared.
+          </p>
+        </div>
+        <div class="menu-tabs" role="group" aria-label="Filter the sample menu">
+          <button class="active" data-filter="all" aria-pressed="true">
+            All the good stuff</button
+          ><button data-filter="small" aria-pressed="false">To begin</button
+          ><button data-filter="main" aria-pressed="false">
+            Something more</button
+          ><button data-filter="sweet" aria-pressed="false">
+            A sweet finish
+          </button>
+        </div>
+        <div class="menu-grid" aria-live="polite">
+          <article class="dish" data-category="small">
+            <div class="dish-top">
+              <h3>Whipped feta</h3>
+              <span>9</span>
+            </div>
+            <p>Roasted grapes, thyme honey, warm sourdough</p>
+            <span class="dish-tag">A TABLE FAVORITE · VEGETARIAN</span>
+          </article>
+          <article class="dish" data-category="small">
+            <div class="dish-top">
+              <h3>Heirloom tomatoes</h3>
+              <span>12</span>
+            </div>
+            <p>Burrata, basil, extra virgin olive oil</p>
+            <span class="dish-tag">SEASONAL · VEGETARIAN</span>
+          </article>
+          <article class="dish" data-category="main">
+            <div class="dish-top">
+              <h3>Lemon & herb chicken</h3>
+              <span>24</span>
+            </div>
+            <p>Crispy potatoes, charred lemon, pan jus</p>
+            <span class="dish-tag">FROM THE GRILL</span>
+          </article>
+          <article class="dish" data-category="main">
+            <div class="dish-top">
+              <h3>Summer garden pasta</h3>
+              <span>19</span>
+            </div>
+            <p>Roasted zucchini, cherry tomatoes, pecorino</p>
+            <span class="dish-tag">VEGETARIAN</span>
+          </article>
+          <article class="dish" data-category="main">
+            <div class="dish-top">
+              <h3>Catch of the day</h3>
+              <span>28</span>
+            </div>
+            <p>White beans, seasonal greens, salsa verde</p>
+            <span class="dish-tag">ASK US WHAT’S FRESH</span>
+          </article>
+          <article class="dish" data-category="sweet">
+            <div class="dish-top">
+              <h3>Olive oil cake</h3>
+              <span>8</span>
+            </div>
+            <p>Citrus cream, seasonal berries, pistachio</p>
+            <span class="dish-tag">SAVE A LITTLE ROOM</span>
+          </article>
+        </div>
+        <p class="menu-note">
+          Illustrative menu · Prices shown in € · Please ask about ingredients
+          and allergens.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="index.html">oliva<span>●</span></a>
+      <p>A little Mediterranean. A lot of heart.</p>
+      <span>© <span id="year">2026</span> Oliva · Restaurant concept</span
+      ><a href="#">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
