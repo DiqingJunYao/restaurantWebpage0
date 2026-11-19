@@ -8,9 +8,25 @@ These are sample photographs downloaded from Unsplash. Replace the files while k
 2. **restaurant-interior.jpg** — “Our table is your table” story section; use a dining room or restaurant atmosphere photo (at least 1000px wide).
 3. **shared-table.jpg** — wide, darkened photo behind “A slower pace. A fuller table.”; use a signature dish or shared meal (at least 1600px wide).
 
-Update each `alt` description in index.html to match your new photo. The dark overlay and image cropping are controlled in src/scss/main.scss.
+Update each `alt` description in index.html to match your new photo. The dark overlay and image cropping are controlled in src/css/main.scss.
 
 Sample photo URLs:
 - https://images.unsplash.com/photo-1547592180-85f173990554
 - https://images.unsplash.com/photo-1517248135467-4c7edcad34c4
 - https://images.unsplash.com/photo-1555939594-58d7cb561ad1
+
+
+## Menu thumbnails
+
+Each photo appears on the left of its dish in `menu.html`. Replace these local files with your actual dish photos, keeping their names. A square crop of at least 192 × 192 pixels works well. Update the corresponding `alt` text to describe your replacement image. These are illustrative sample photographs, not photos of dishes prepared by this restaurant.
+
+| File in `src/images/menu/` | Dish | Sample source |
+| --- | --- | --- |
+| `whipped-feta.jpg` | Whipped feta | [Choosing Chia](https://choosingchia.com/creamy-whipped-feta-dip/) |
+| `heirloom-tomatoes.jpg` | Heirloom tomatoes | [Unsplash](https://images.unsplash.com/photo-1546094096-0df4bcaaa337) |
+| `lemon-herb-chicken.jpg` | Lemon & herb chicken | [Unsplash](https://images.unsplash.com/photo-1532550907401-a500c9a57435) |
+| `garden-pasta.jpg` | Summer garden pasta | [Unsplash](https://images.unsplash.com/photo-1473093295043-cdd812d0e601) |
+| `catch-of-the-day.jpg` | Catch of the day | [Unsplash](https://images.unsplash.com/photo-1467003909585-2f8a72700288) |
+| `olive-oil-cake.jpg` | Olive oil cake | [Epicurious](https://www.epicurious.com/recipes-menus/almond-flour-recipes) |
+
+Images display at 96 × 96 pixels on desktop and 72 × 72 pixels on smaller screens. Size and spacing are set by `.dish` and `.dish-image` in `src/css/main.scss`.

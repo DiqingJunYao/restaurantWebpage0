@@ -372,6 +372,10 @@ h2 {
   column-gap: 9%;
 }
 .dish {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
   padding: 26px 0;
   border-bottom: 1px solid #d0d3c4;
   p {
@@ -380,6 +384,15 @@ h2 {
     margin-bottom: 14px;
     line-height: 1.7;
   }
+}
+.dish-image {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  background: #e9ebde;
+}
+.dish-copy {
+  min-width: 0;
 }
 .dish-top {
   display: flex;
@@ -533,6 +546,14 @@ footer {
   }
 }
 @media (max-width: 950px) {
+  .dish {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .dish-image {
+    width: 72px;
+    height: 72px;
+  }
   .hero {
     gap: 30px;
   }
