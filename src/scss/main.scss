@@ -424,14 +424,19 @@ h2 {
   }
   > div > .contact-details {
     margin-top: 24px;
+    padding: 20px 24px;
+    border-left: 4px solid $rust;
+    background: #e9ebde;
     color: $ink;
-    font-size: 1rem;
+    font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+    font-weight: 500;
+    line-height: 1.8;
     overflow-wrap: anywhere;
-  }
-  .demo-note {
-    max-width: 360px;
-    font-size: 10px !important;
-    margin-top: 20px;
+
+    strong {
+      color: $rust;
+      font-weight: 700;
+    }
   }
 }
 .visit-details {
