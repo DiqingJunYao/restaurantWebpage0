@@ -88,7 +88,7 @@ nav {
   align-items: center;
   gap: 35px;
   > a {
-    font-size: 12px;
+    font-size: 16px;
   }
   > a:not(.button):hover {
     color: $rust;
@@ -102,7 +102,7 @@ nav {
   background: $rust;
   padding: 19px 24px;
   color: white;
-  font-size: 12px;
+  font-size: 18px;
   transition:
     background 0.2s,
     transform 0.2s;
