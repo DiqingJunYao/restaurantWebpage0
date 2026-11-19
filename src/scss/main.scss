@@ -422,8 +422,11 @@ h2 {
     color: $muted;
     line-height: 1.9;
   }
-  .button {
-    margin-top: 12px;
+  > div > .contact-details {
+    margin-top: 24px;
+    color: $ink;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
   }
   .demo-note {
     max-width: 360px;

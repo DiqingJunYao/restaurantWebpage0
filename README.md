@@ -14,10 +14,10 @@ Open http://127.0.0.1:5173. You can also open `index.html` directly after buildi
 
 ## Edit
 
-- `index.html`: restaurant name, menu, contact information, hours, image comments, and accessible photo descriptions. Replace `hello@example.com` before using the enquiry link.
+- `index.html`: restaurant name, menu, contact information, hours, image comments, and accessible photo descriptions. Replace `[Your phone number]` and `hello@example.com` with your telephone and email.
 - `src/scss/main.scss`: all styling, colors, layout, responsive breakpoints. Run `npm run build` after changes, or `npm run watch:css` while editing.
 - `src/css/main.css`: compiled CSS actually loaded by the page, included in source for direct opening.
 - `src/images/`: local sample photos. See its README for the image-to-section mapping.
 - `src/main.js`: mobile navigation and menu filters.
 
-The table enquiry opens the visitor's email client. This static site has no booking backend and does not confirm reservations. No remote fonts or runtime libraries are required.
+Telephone and email are displayed as text in the visit section. This static site has no booking backend. No remote fonts or runtime libraries are required.
