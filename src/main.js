@@ -18,8 +18,13 @@ navigation
   .querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeNavigation));
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeNavigation();
+  if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+    const focusWasInNavigation = navigation.contains(document.activeElement);
+    closeNavigation();
+    if (focusWasInNavigation) toggle.focus();
+  }
 });
+window.matchMedia("(max-width: 650px)").addEventListener("change", closeNavigation);
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll("[data-filter]").forEach((tab) => {

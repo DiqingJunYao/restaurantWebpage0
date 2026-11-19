@@ -4,8 +4,8 @@
   "private": true,
   "description": "An editorial restaurant website with SCSS source and compiled CSS.",
   "scripts": {
-    "build": "sass src/scss/main.scss src/css/main.css --style=compressed --no-source-map && node scripts/build.mjs",
-    "watch:css": "sass --watch src/scss/main.scss:src/css/main.css",
+    "build": "sass src/css/main.scss src/css/main.css --style=compressed --no-source-map && node scripts/build.mjs",
+    "watch:css": "sass --watch src/css/main.scss:src/css/main.css --no-source-map",
     "dev": "npm run build && python3 -m http.server 5173 --bind 127.0.0.1"
   },
   "devDependencies": { "sass": "^1.93.0" }

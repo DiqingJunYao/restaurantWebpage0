@@ -15,7 +15,7 @@ Open http://127.0.0.1:5173. You can also open `index.html` directly after buildi
 ## Edit
 
 - `index.html`: restaurant name, menu, contact information, hours, image comments, and accessible photo descriptions. Replace `[Your phone number]` and `hello@example.com` with your telephone and email.
-- `src/scss/main.scss`: all styling, colors, layout, responsive breakpoints. Run `npm run build` after changes, or `npm run watch:css` while editing.
+- `src/css/main.scss`: all styling, colors, layout, responsive breakpoints. Run `npm run build` after changes, or `npm run watch:css` while editing.
 - `src/css/main.css`: compiled CSS actually loaded by the page, included in source for direct opening.
 - `src/images/`: local sample photos. See its README for the image-to-section mapping.
 - `src/main.js`: mobile navigation and menu filters.
