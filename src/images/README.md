@@ -33,4 +33,16 @@ Images display at 96 × 96 pixels on desktop and 72 × 72 pixels on smaller scre
 
 ## Enlarged menu photos
 
+Additional Greek dishes use the same filenames in `src/images/menu/` and `src/images/menu/full/`:
+
+| Filename | Sample photo credit |
+| --- | --- |
+| `tzatziki.jpg` | [Photo source](https://www.themediterraneandish.com/tzatziki-sauce-recipe/) |
+| `spanakopita.jpg` | [Photo source](https://www.themediterraneandish.com/spanakopita-recipe-greek-spinach-pie/) |
+| `dolmades.jpg` | [Photo source](https://www.themediterraneandish.com/stuffed-grape-leaves-dolmades/) |
+| `moussaka.jpg` | [Photo source](https://www.parapolitika.gr/gefsis/article/1416980/pedanostimi-sudagi-gia-elafru-mousaka/) |
+| `chicken-souvlaki.jpg` | [Photo source](https://www.themediterraneandish.com/greek-chicken-souvlaki-recipe-tzatziki/) |
+| `baklava.jpg` | [Photo source](https://www.themediterraneandish.com/how-to-make-baklava/) |
+
+
 Clicking a menu thumbnail opens a larger, uncropped photo in an overlay on the current page. Close it with the × button, Escape, or a click outside the panel. Larger versions are stored in `src/images/menu/full/` using the same filenames as the thumbnails and load only when opened. When replacing a dish photo, update both versions. Use a large version at least 1200 pixels wide for a clear enlargement.
