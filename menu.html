@@ -61,7 +61,9 @@
         <div class="menu-grid" aria-live="polite">
           <article class="dish" data-category="small">
             <!-- DISH PHOTO: whipped-feta.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/whipped-feta.jpg" width="96" height="96" alt="Whipped feta dip with olive oil and herbs" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/whipped-feta.jpg" aria-label="Enlarge photo of Whipped feta" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/whipped-feta.jpg" width="96" height="96" alt="Whipped feta dip with olive oil and herbs" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Whipped feta</h3>
@@ -73,7 +75,9 @@
           </article>
           <article class="dish" data-category="small">
             <!-- DISH PHOTO: heirloom-tomatoes.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/heirloom-tomatoes.jpg" width="96" height="96" alt="Fresh red tomatoes on the vine" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/heirloom-tomatoes.jpg" aria-label="Enlarge photo of Heirloom tomatoes" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/heirloom-tomatoes.jpg" width="96" height="96" alt="Fresh red tomatoes on the vine" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Heirloom tomatoes</h3>
@@ -85,7 +89,9 @@
           </article>
           <article class="dish" data-category="main">
             <!-- DISH PHOTO: lemon-herb-chicken.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/lemon-herb-chicken.jpg" width="96" height="96" alt="Grilled chicken with lemon and vegetables" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/lemon-herb-chicken.jpg" aria-label="Enlarge photo of Lemon and herb chicken" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/lemon-herb-chicken.jpg" width="96" height="96" alt="Grilled chicken with lemon and vegetables" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Lemon & herb chicken</h3>
@@ -97,7 +103,9 @@
           </article>
           <article class="dish" data-category="main">
             <!-- DISH PHOTO: garden-pasta.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/garden-pasta.jpg" width="96" height="96" alt="Pesto pasta with cherry tomatoes" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/garden-pasta.jpg" aria-label="Enlarge photo of Summer garden pasta" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/garden-pasta.jpg" width="96" height="96" alt="Pesto pasta with cherry tomatoes" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Summer garden pasta</h3>
@@ -109,7 +117,9 @@
           </article>
           <article class="dish" data-category="main">
             <!-- DISH PHOTO: catch-of-the-day.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/catch-of-the-day.jpg" width="96" height="96" alt="Seared fish served with vegetables" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/catch-of-the-day.jpg" aria-label="Enlarge photo of Catch of the day" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/catch-of-the-day.jpg" width="96" height="96" alt="Seared fish served with vegetables" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Catch of the day</h3>
@@ -121,7 +131,9 @@
           </article>
           <article class="dish" data-category="sweet">
             <!-- DISH PHOTO: olive-oil-cake.jpg — replace with your own dish photograph. -->
-            <img class="dish-image" src="src/images/menu/olive-oil-cake.jpg" width="96" height="96" alt="A slice of olive oil cake with syrup" loading="lazy" decoding="async" />
+            <button class="dish-photo" type="button" data-full-image="src/images/menu/full/olive-oil-cake.jpg" aria-label="Enlarge photo of Olive oil cake" aria-haspopup="dialog" aria-controls="dish-lightbox">
+              <img class="dish-image" src="src/images/menu/olive-oil-cake.jpg" width="96" height="96" alt="A slice of olive oil cake with syrup" loading="lazy" decoding="async" />
+            </button>
             <div class="dish-copy">
               <div class="dish-top">
                 <h3>Olive oil cake</h3>
@@ -138,6 +150,15 @@
         </p>
       </section>
     </main>
+    <!-- Full-size dish photographs live in src/images/menu/full/. -->
+    <dialog id="dish-lightbox" class="photo-lightbox" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" aria-label="Close photo" autofocus><span aria-hidden="true">×</span></button>
+      <figure>
+        <p class="lightbox-status" role="status" hidden></p>
+        <img class="lightbox-image" alt="" decoding="async" hidden />
+        <figcaption id="lightbox-title"></figcaption>
+      </figure>
+    </dialog>
     <footer>
       <a class="logo" href="index.html">oliva<span>●</span></a>
       <p>A little Mediterranean. A lot of heart.</p>

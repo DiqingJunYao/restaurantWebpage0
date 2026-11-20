@@ -391,6 +391,70 @@ h2 {
   border-radius: 8px;
   background: #e9ebde;
 }
+.dish-photo {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: zoom-in;
+}
+html.lightbox-open {
+  overflow: hidden;
+}
+.photo-lightbox {
+  width: min(900px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  padding: 60px 20px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: $cream;
+  color: $ink;
+
+  &::backdrop {
+    background: rgba(15, 23, 15, 0.8);
+  }
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    padding-top: 16px;
+    text-align: center;
+    font: 1.25rem $serif;
+  }
+}
+.lightbox-image {
+  width: 100%;
+  height: auto;
+  max-height: calc(100dvh - 180px);
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: $ink;
+  color: $cream;
+  font-size: 28px;
+  line-height: 1;
+
+  &:hover {
+    background: $rust;
+  }
+}
+.lightbox-status {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+}
 .dish-copy {
   min-width: 0;
 }

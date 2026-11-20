@@ -30,3 +30,7 @@ Each photo appears on the left of its dish in `menu.html`. Replace these local f
 | `olive-oil-cake.jpg` | Olive oil cake | [Epicurious](https://www.epicurious.com/recipes-menus/almond-flour-recipes) |
 
 Images display at 96 × 96 pixels on desktop and 72 × 72 pixels on smaller screens. Size and spacing are set by `.dish` and `.dish-image` in `src/css/main.scss`.
+
+## Enlarged menu photos
+
+Clicking a menu thumbnail opens a larger, uncropped photo in an overlay on the current page. Close it with the × button, Escape, or a click outside the panel. Larger versions are stored in `src/images/menu/full/` using the same filenames as the thumbnails and load only when opened. When replacing a dish photo, update both versions. Use a large version at least 1200 pixels wide for a clear enlargement.
