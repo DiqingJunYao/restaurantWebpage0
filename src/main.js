@@ -48,7 +48,14 @@ if (photoDialog) {
   const photoStatus = photoDialog.querySelector(".lightbox-status");
   let photoOpener;
 
-  largePhoto.addEventListener("load", () => {
+  largePhoto.addEventListener("load", async () => {
+    const source = largePhoto.src;
+    try {
+      await largePhoto.decode();
+    } catch {
+      return;
+    }
+    if (!photoDialog.open || largePhoto.src !== source) return;
     largePhoto.hidden = false;
     photoStatus.hidden = true;
   });
